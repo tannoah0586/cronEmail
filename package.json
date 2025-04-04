@@ -1,0 +1,27 @@
+{
+  "name": "cronemail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cronEmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannoah0586/cronEmail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tannoah0586/cronEmail/issues"
+  },
+  "homepage": "https://github.com/tannoah0586/cronEmail#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.13.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.0"
+  }
+}
