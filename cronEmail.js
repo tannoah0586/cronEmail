@@ -2,6 +2,8 @@ const cron = require('node-cron');
 const mongoose = require('mongoose');
 const { processSavedAwbsEmail } = require('./controllers/emailController'); 
 require('dotenv').config(); // Load environment variables
+const fs = require('fs');
+
 
 async function runEmailTask() {
   try {
@@ -28,3 +30,4 @@ cron.schedule('30 17 * * *', runEmailTask, {
 });
 
 console.log('Cron job scheduled.');
+console.log("Current Directory Contents:", fs.readdirSync('.'));
