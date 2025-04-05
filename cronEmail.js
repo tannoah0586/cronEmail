@@ -24,7 +24,7 @@ async function runEmailTask() {
 }
 
 // Schedule the task (e.g., every day at 9:45 PM Singapore time)
-cron.schedule('30 21 * * 7', runEmailTask, {
+cron.schedule('** 10 * * 6', runEmailTask, {
   scheduled: true,
   timezone: 'Asia/Singapore',
 });
